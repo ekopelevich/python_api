@@ -40,8 +40,8 @@ def create_task():
         abort(400)
     task = {
         'id': tasks[-1]['id'] + 1,
-        'title': request.json['title'],
-        'description': request.json.get('description', ""),
+        'title': 'learn stuff',
+        'description': u'figure out what\'s happening',
         'done': False
     }
     tasks.append(task)
